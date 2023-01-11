@@ -3,17 +3,17 @@
 This document is written to provide aid in understanding the project.
 
 Contents of the document - 
-Understanding the problem statement 
- Machine learning 
-Types of machine learning models with examples 
-Machine learning algorithm used for the model - Logistic Regression
-NumPy library 
-Pandas library 
-Scikit-learn library 
-Data preprocessing - StandardScaler
-Exploratory data analysis 
-Train-test split 
-Model evaluation - accuracy 
+1. Understanding the problem statement 
+2. Machine learning 
+3. Types of machine learning models with examples 
+4. Machine learning algorithm used for the model - Logistic Regression
+5. NumPy library 
+6. Pandas library 
+7. Scikit-learn library 
+8. Data preprocessing - StandardScaler
+9. Exploratory data analysis 
+10. Train-test split 
+11. Model evaluation - accuracy 
 
 Problem statement - 
 Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood glucose. High blood sugar level can cause a number of other health problems relating to heart, skin, gut etc. Nowadays, a large population of both young and old are being diagnosed with diabetes. 
