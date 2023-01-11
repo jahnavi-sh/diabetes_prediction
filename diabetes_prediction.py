@@ -1,21 +1,14 @@
-#Diabetes is a chronic disease that occurs either when the pancreas
-#does not produce enough insulin or when the body cannot effectively 
-#use the insulin it produces. Insuline is a hormone that regulates 
-#blood glucose. High blood sugar level can cause a number of other 
-#health problems relating to heart, skin, gut etc. Nowadays, a 
-#large population of both young and old are being diagnosed wtih 
+#Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively 
+#use the insulin it produces. Insuline is a hormone that regulates blood glucose. High blood sugar level can cause a number of other 
+#health problems relating to heart, skin, gut etc. Nowadays, a large population of both young and old are being diagnosed wtih 
 #diabetes. 
-#Here, we will build a machine learning model that predicts whether 
-#a patient as diabetes or not based on the medical reports 
-#being given. We use several medical information such as dna of 
-# the patient, their glucose level, their blood sugar level etc. 
+#Here, we will build a machine learning model that predicts whether a patient as diabetes or not based on the medical reports 
+#being given. We use several medical information such as dna of the patient, their glucose level, their blood sugar level etc. 
 
 #workflow 
 #1. collect the data 
-#2. data prepocessing - This is done because there is a huge 
-#   amount of medical data which we need to standardize so that 
-#   it all lies in the same range and can be easily fed to the 
-#   machine learning algorithm. 
+#2. data prepocessing - This is done because there is a huge amount of medical data which we need to standardize so that 
+#   it all lies in the same range and can be easily fed to the machine learning algorithm. 
 #3. train test split 
 #4. model being used is support vector machine classifier model. 
 
@@ -27,8 +20,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
 
-#we use Diabetes dataset from kaggle for this study. the National 
-#Institute of Diabetes and Digestive and Kidney Diseases is the 
+#we use Diabetes dataset from kaggle for this study. the National Institute of Diabetes and Digestive and Kidney Diseases is the 
 #original source of this database.
 #data collection 
 diabetes_dataset = pd.read_csv(r'')
