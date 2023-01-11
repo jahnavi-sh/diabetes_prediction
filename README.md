@@ -100,7 +100,7 @@ In this case, we use accuracy. Accuracy is a performance metrics that is used to
 
 Accuracy = ( tp + tn) / ( tp + fp + tn + fn )
 
-Tp - true positive. This refers to the total number of observations that belong to the positive class and have been predicted correctly. 
-Tn - true negatives. It is total number of observations that belong to the negative class and have been predicted correctly 
-Fp - false positives. It total number of observations that have been predicted to belong to positive class, but instead belong to the negative class. 
-Fn - false negatives. It is total number of observations that have been predicted to be a part of negative class but instead belong to the positive class. 
+- Tp - true positive. This refers to the total number of observations that belong to the positive class and have been predicted correctly. 
+- Tn - true negatives. It is total number of observations that belong to the negative class and have been predicted correctly 
+- Fp - false positives. It total number of observations that have been predicted to belong to positive class, but instead belong to the negative class. 
+- Fn - false negatives. It is total number of observations that have been predicted to be a part of negative class but instead belong to the positive class. 
