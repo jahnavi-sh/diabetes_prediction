@@ -20,8 +20,9 @@ from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
 
-#we use Diabetes dataset from kaggle for this study. the National Institute of Diabetes and Digestive and Kidney Diseases is the 
-#original source of this database.
+#we use Diabetes dataset from kaggle for this study. PIMA diabetes dataset.
+#This dataset contains medical information of females. for example, number of pregnancies they have gonw through, their blood
+#glucose level etc. 
 #data collection 
 diabetes_dataset = pd.read_csv(r'')
 
