@@ -55,6 +55,7 @@ diabetes_dataset.describe()
 
 #calculate number of diabetic and non diabetic patients 
 diabetes_dataset['Outcome'].value_counts()
+#we have 500 non-diabetic cases and 268 diabetic cases 
 
 diabetes_dataset.groupby['Outcome'].mean()
 
@@ -85,11 +86,16 @@ X_train_prediction = classifier.predict(X_train)
 training_data_accuracy = accuracy_score(X_train_prediction, Y_train)
 
 print ('accuracy score of training data', training_data_accuracy)
+#the accuracy score is 78%
 
 #evaluating on test data 
 X_test_prediction = classifier.predict(X_test)
 test_data_accuracy = accuracy_score(X_test_prediction, Y_test)
 print ('accuracy score of test data', test_data_accuracy)
+#the accuracy score is 77%
+
+#above 70% is considered a good score. 
+#therefore, support vector machine works well for the dataset
 
 #making a predictive system 
 input_data = ()
