@@ -24,12 +24,24 @@ from sklearn.metrics import accuracy_score
 #This dataset contains medical information of females. for example, number of pregnancies they have gonw through, their blood
 #glucose level etc. 
 #data collection 
-diabetes_dataset = pd.read_csv(r'')
+diabetes_dataset = pd.read_csv(r'diabetes.csv')
 
 #first step is to get familiar with the structure of the data
 
-#top 5 rows of the dataset
+#view first 5 rows of the dataset
 diabetes_dataset.head()
+
+#in the dataset, we can following columns - 
+#1. Pregnancies - number of pregnancies the patient had 
+#2. Glucose - glucose level 
+#3. BloodPressure - blood pressure level 
+#4. SkinThickness - thickness of the epidermis layer 
+#5. Insulin - natural insulin secretion level in the patient 
+#6. BMI - body mass index is the weight of the person divided by square of the height of the person 
+#7. DiabetesPedigreeFunctiom
+#8. Age 
+#9. Outcome - whether the person is diabetic or not. 
+
 #all the columns are integers, except BMI and DiabetesPedigreeFunction
 #the target variable is the labels with values 0 an 1. 
 #0 - patient does not have diabetes 
