@@ -1,3 +1,4 @@
+#First, we need to understand the problem statement -
 #Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively 
 #use the insulin it produces. Insuline is a hormone that regulates blood glucose. High blood sugar level can cause a number of other 
 #health problems relating to heart, skin, gut etc. Nowadays, a large population of both young and old are being diagnosed wtih 
@@ -5,17 +6,20 @@
 #Here, we will build a machine learning model that predicts whether a patient as diabetes or not based on the medical reports 
 #being given. We use several medical information such as dna of the patient, their glucose level, their blood sugar level etc. 
 
-#workflow 
+#Workflow for the project - 
 #1. collect the data 
 #2. data prepocessing - This is done because there is a huge amount of medical data which we need to standardize so that 
 #   it all lies in the same range and can be easily fed to the machine learning algorithm. 
 #3. train test split 
 #4. model being used is support vector machine classifier model. 
+#5. model evaluation - accuracy score
 
 #load libraries 
+
 import numpy as np         #for linear algebra
 import pandas as pd        #for data processing
 from sklearn.preprocessing import StandardScaler
+#model building and evaluation
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
@@ -31,7 +35,7 @@ diabetes_dataset = pd.read_csv(r'diabetes.csv')
 #view first 5 rows of the dataset
 diabetes_dataset.head()
 
-#in the dataset, we can following columns - 
+#in the dataset, we have the following columns - 
 #1. Pregnancies - number of pregnancies the patient had 
 #2. Glucose - glucose level 
 #3. BloodPressure - blood pressure level 
