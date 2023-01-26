@@ -15,12 +15,14 @@ Contents of the document -
 10. Train-test split 
 11. Model evaluation - accuracy 
 
-Problem statement - 
+First we need to understand the problem statement - 
+
 Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood glucose. High blood sugar level can cause a number of other health problems relating to heart, skin, gut etc. Nowadays, a large population of both young and old are being diagnosed with diabetes. 
 
 Here, we will build a machine learning model that predicts whether a patient as diabetes or not based on the medical reports being given. We use several medical information such as dna of the patient, their glucose level, their blood sugar level etc. 
 
 Machine learning - 
+
 Machine learning enables the processing of sonar signals and target detection. Machine Learning is a subset of Artificial Intelligence. This involves the development of computer systems that are able to learn by using algorithms and statistical measures to study data and draw results from it. Machine learning is basically an integration of computer systems, statistical mathematics and data.
 
 Machine Learning is further divided into three classes - Supervised learning, Unsupervised learning and Reinforcement Learning. 
@@ -41,33 +43,40 @@ SVM algorithm chooses the best line to classify data points. It chooses the line
 
 SVM chooses the extreme points/vectors that help in creating the hyperplane. These extreme points are called support vectors and therefore the algorithm is called support vector machine. 
 
+Libraries used in the project -
+
 NumPy  
+
 It is a python library used for working with arrays. It has functions for working in the domain of linear algebra, fourier transform, and matrices. It is the fundamental package for scientific computing with python. NumPy stands for numerical python. 
 
 NumPy is preferred because it is faster than traditional python lists. It has supporting functions that make working with ndarray very easy. Arrays are frequently used where speed and resources are very important. NumPy arrays are faster because it is stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently. This is locality of reference in computer science. 
 
 Pandas - 
+
 Pandas is made for working with relational or labelled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series. 
 
 It has a lot of advantages like - 
-Fast and efficient for manipulating and analyzing data
-Data from different file objects can be loaded 
-Easy handling of missing data in data preprocessing 
-Size mutability 
-Easy dataset merging and joining 
-Flexible reshaping and pivoting of datasets 
-Gives time-series functionality 
+1. Fast and efficient for manipulating and analyzing data
+2. Data from different file objects can be loaded 
+3. Easy handling of missing data in data preprocessing 
+4. Size mutability 
+5. Easy dataset merging and joining 
+6. Flexible reshaping and pivoting of datasets 
+7. Gives time-series functionality 
 
 Pandas is built on top of NumPy library. That means that a lot of structures of NumPy are used or replicated in Pandas. The data produced by pandas are often used as input for plotting functions of Matplotlib, statistical analysis in SciPy, and machine learning algorithms in Scikit-learn. 
 
 Scikit-Learn - 
+
 It provides efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction. It has numerous machine learning, pre-processing, cross validation, and visualization algorithms. 
 
 Data preprocessing - 
+
 This is done because there is a huge amount of medical data we are dealing with here. So we need to standardize so that it all lies in the same range and can be easily fed to the machine learning algorithm. 
 StandardScaler scales the data to a variance of 1 after the mean is reduced to 0. 
 
-Exploratory data analysis - 
+Exploratory data analysis -
+
 Exploratory data analysis is the process of performing initial investigation on the data to discover patterns or spot anomalies. It is done to test the hypothesis and to check assumptions with the help of summary statistics and graphical representations. 
 
 ‘describe()’ method returns description of data in DataFrame. It tells us the following information for each column - 
@@ -81,16 +90,17 @@ Min - minimum value
 Max - maximum value
 
 Train-test split - 
+
 The entire dataset is split into training dataset and testing dataset. Usually, 80-20 or 70-30 split is done. The train-test split is used to prevent the model from overfitting and to estimate the performance of prediction-based algorithms. We need to split the dataset to evaluate how well our machine learning model performs. The train set is used to fit the model, and statistics of training set are known. Test set is for predictions. 
 
 This is done by using scikit-learn library and train_test_split() function. 
 Parameters - 
-*arrays: inputs such as lists, arrays, data frames, or matrices
-test_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our test size. its default value is none.
-train_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our train size. its default value is none.
-random_state: this parameter is used to control the shuffling applied to the data before applying the split. it acts as a seed.
-shuffle: This parameter is used to shuffle the data before splitting. Its default value is true.
-stratify: This parameter is used to split the data in a stratified fashion.
+1. *arrays: inputs such as lists, arrays, data frames, or matrices
+2. test_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our test size. its default value is none.
+3. train_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our train size. its default value is none.
+4. random_state: this parameter is used to control the shuffling applied to the data before applying the split. it acts as a seed.
+5. shuffle: This parameter is used to shuffle the data before splitting. Its default value is true.
+6. stratify: This parameter is used to split the data in a stratified fashion.
 
 Model evaluation - 
 
