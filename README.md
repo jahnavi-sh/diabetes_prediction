@@ -21,6 +21,27 @@ Diabetes is a chronic disease that occurs either when the pancreas does not prod
 
 Here, we will build a machine learning model that predicts whether a patient as diabetes or not based on the medical reports being given. We use several medical information such as dna of the patient, their glucose level, their blood sugar level etc. 
 
+About the dataset - 
+
+The dataset contains 500 non-diabetic cases and 268 diabetic cases. 
+
+In the dataset, we have the following columns - 
+1. Pregnancies - number of pregnancies the patient had 
+2. Glucose - glucose level 
+3. BloodPressure - blood pressure level 
+4. SkinThickness - thickness of the epidermis layer 
+5. Insulin - natural insulin secretion level in the patient 
+6. BMI - body mass index is the weight of the person divided by square of the height of the person 
+7. DiabetesPedigreeFunctiom
+8. Age 
+9. Outcome - whether the person is diabetic or not. 
+
+The target variable is the labels with values 0 an 1. 
+
+0 - patient does not have diabetes 
+
+1 - patient has diabetes 
+
 Machine learning - 
 
 Machine learning enables the processing of sonar signals and target detection. Machine Learning is a subset of Artificial Intelligence. This involves the development of computer systems that are able to learn by using algorithms and statistical measures to study data and draw results from it. Machine learning is basically an integration of computer systems, statistical mathematics and data.
@@ -88,6 +109,19 @@ Min - minimum value
 50% - the 50 percentile 
 75% - the 75 percentile
 Max - maximum value
+
+Index.value_counts() -
+
+This function returns objects containing counts of unique values. 
+Excludes NA values by default. The first element is most frequently occurring element.  
+
+Parameters - 
+1. Normalize - f True then the object returned will contain the relative frequencies of the unique values. 
+2. Sort - Sort by values 
+3. Ascending - Sort in ascending order 
+4. Bins 
+5. Dropna - Don’t include counts of NaN.
+6. Returns - counts : Series 
 
 Train-test split - 
 
